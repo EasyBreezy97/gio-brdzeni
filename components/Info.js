@@ -70,9 +70,9 @@ export default function Info({ data }) {
       </Flex>
       <Flex flex={1}>
         <Image
-          alt={"gio nirvanashi"}
+          alt={"thinker"}
           objectFit={"cover"}
-          src={"/assets/nirvana_gio.png"}
+          src={"/assets/thinker.jpg"}
         />
       </Flex>
     </Stack>
