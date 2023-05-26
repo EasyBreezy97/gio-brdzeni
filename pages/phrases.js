@@ -2,8 +2,6 @@ import styles from "../styles/Home.module.css";
 import Info from "../components/Info";
 import PhasesGrid from "../components/PhraseGrid";
 import ScrollTop from "../components/ScrollTop";
-import { useEffect } from "react";
-import { phraseOfTheDay } from "../utils/phraseOfDay";
 
 // This gets called on every request
 export async function getServerSideProps() {

@@ -10,6 +10,7 @@ import {
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { phraseOfTheDay } from "../utils/phraseOfDay";
+import SpeakButton from "./SpeakButton";
 
 export default function Info({ data }) {
   const [phrase, setPhrase] = useState("");
@@ -49,9 +50,14 @@ export default function Info({ data }) {
               დღის ფრაზა
             </Text>
           </Heading>
-          <Text fontSize={{ base: "xl", lg: "xl" }} fontWeight={"bold"} color={"gray.500"}>
+          <Text
+            fontSize={{ base: "xl", lg: "xl" }}
+            fontWeight={"bold"}
+            color={"gray.500"}
+          >
             {phrase}
           </Text>
+          <SpeakButton size={35} text={phrase} />
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
             <Link href={"#all-phrase-heading"} scroll={false}>
               <Button
