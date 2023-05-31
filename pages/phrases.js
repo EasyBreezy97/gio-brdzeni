@@ -5,12 +5,10 @@ import ScrollTop from "../components/ScrollTop";
 
 // This gets called on every request
 export async function getServerSideProps() {
-  // Fetch data from external API
-  const res = await fetch(process.env.API_URL);
-  const data = await res.json();
-
+  const data = require("/mocks/frtianebi.json")
+  const items = data.items
   // Pass data to the page via props
-  return { props: { data } };
+  return { props: { data :items} };
 }
 
 export default function Home({ data }) {
